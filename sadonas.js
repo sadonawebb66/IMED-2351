@@ -8,7 +8,7 @@ const dog={
 dog.color="blue";
 
 let a = 4;
-let x = (9+10) * a;            //arithmetic/ mathematical operations
+let x = (14+29) * a;            //arithmetic/ mathematical operations
 document.getElementById("arithmetic").innerHTML = x;
 
 var carName1="Buggy"; //string variable
