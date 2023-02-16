@@ -56,9 +56,23 @@ function myFunction() {
   document.getElementById("animal-switch").innerHTML =
   text.replace("dog Jax","cat Abby");}
 
-  let p = 9.656;
-  document.getElementById("number-method").innerHTML = 
-    p.toPrecision() + "<br>" +
-    p.toPrecision(16) + "<br>" +                    //number method
-    p.toPrecision(4) + "<br>" +
-    p.toPrecision(8);  
+
+
+  //module 5 work below
+let text5="";                                       //for loop
+for (let numPets=0; numPets < 4; numPets++){
+  text5+= "I have "+ numPets +" pets. They're  my family." + "<br>";
+}
+document.getElementById("forLoop").innerHTML = text5;
+let text6="";
+let numBooks = 0;                              //while loop
+while (numBooks<23){
+  text6+="<br> I have more than "+ numBooks; numBooks++;" books.";
+}
+document.getElementById("whileLoop").innerHTML =text6;
+document.getElementById("animal-switch").style.color = "red"; // CSS change w/ JS
+const text7= document.querySelector(".title");
+const change= document.querySelector('.changeStyle');
+change.addEventListener("click", function(){
+  text7.classList.toggle("change");
+})
