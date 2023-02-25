@@ -90,4 +90,4 @@ HogwartsCharacter.name = function() {
 document.getElementById("objectMethod").innerHTML =    //object method
 "I'm addicted to Hogwarts Legacy and my character's name is " + HogwartsCharacter.name();
 const spells =["Expelliarmus","Levioso","Avada Kadavra", "Lumos"];   // array
-document.getElementById("arrayMethod").innerHTML = spells.join(" ^ ");
+document.getElementById("arrayMethod").innerHTML = spells.join(" ^ ");// array method
