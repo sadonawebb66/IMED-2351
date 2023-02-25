@@ -66,13 +66,28 @@ for (let numPets=0; numPets < 4; numPets++){
 document.getElementById("forLoop").innerHTML = text5;
 let text6="";
 let numBooks = 0;                              //while loop
-while (numBooks<23){
+while (numBooks<6){
   text6+="<br> I have more than "+ numBooks; numBooks++;" books.";
 }
 document.getElementById("whileLoop").innerHTML =text6;
 document.getElementById("animal-switch").style.color = "red"; // CSS change w/ JS
 const text7= document.querySelector(".title");
 const change= document.querySelector('.changeStyle');
-change.addEventListener("click", function(){
+change.addEventListener("click", function(){              //Change CSS based on variable value
   text7.classList.toggle("change");
 })
+
+// module 6 work below
+const HogwartsCharacter = {       //object
+  firstName: "Lillian",
+  lastName: "Pierce",
+  id: 5566,
+};
+HogwartsCharacter.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+document.getElementById("objectMethod").innerHTML =    //object method
+"I'm addicted to Hogwarts Legacy and my character's name is " + HogwartsCharacter.name();
+const spells =["Expelliarmus","Levioso","Avada Kadavra", "Lumos"];   // array
+document.getElementById("arrayMethod").innerHTML = spells.join(" ^ ");
